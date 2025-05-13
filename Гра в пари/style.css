@@ -1,0 +1,197 @@
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+  }
+  .darkmode{
+    --base-color: #000000;
+    --base-variant: #000000;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    font-family: Poppins;
+  }
+  body{
+    min-height: 100vh;
+    background-color: var(--base-color);
+    color: var(--text-color);
+  }
+  header, section{
+    padding: 70px min(50px, 7%);
+  }
+  section{
+    background-color: var(--base-variant);
+  }
+  p{
+    margin: 10px 0 20px 0;font-weight: 500;
+    color: var(--secondary-text);
+  }
+  button{
+    border: none;
+    padding: .8em 2em;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    font: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  button1{
+    border: none;
+    padding: .8em 2em;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    font: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .cta-button{
+    background-color: var(--accent-color);
+  }
+  #theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 20px;
+
+  }
+  #theme-switch svg{
+    fill: var(--primary-color);
+  }
+  #theme-switch svg:last-child{
+    display: none;
+  }
+  .darkmode #theme-switch svg:first-child{
+    display: none;
+  }
+  .darkmode #theme-switch svg:last-child{
+    display: block;
+  }
+  .wrapper{
+    display: flex;
+    gap: 20px;
+    width: 300px;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+  }
+  .card{
+    box-sizing: border-box;
+    padding: 20px 20px;
+    flex-shrink: 0;
+    width: 300px;
+    background-color: white;
+    border-radius: 14px;
+    text-size: 14px;
+  }
+   {
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+  }
+  .navigation {
+    position: fixed;
+    height: 70px;
+    right: 0;
+    left: 0;
+    background-color: navy;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
+    -moz-box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
+    box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
+
+  }
+
+  .navigation h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    font-family: Arial;
+    color: #1100ff;
+    background-image: -webkit-linear-gradient(
+            0deg,
+            #4d40ff 0%,
+            #5996ba 46%,
+            #ffffff 86%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  ul {
+    position: relative;
+    height: 70px;
+    left: 810px;
+  }
+ li {
+   display: inline-block;
+   margin-left: 5px;
+   width: 90px;
+   height: 40px;
+   padding-top: 25px;
+   font-weight: bold;
+   list-style: none;
+   text-align: center;
+   text-transform: uppercase;
+ }
+ a {
+   color: white;
+   font-size: 15px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   transition: 0.5s;
+ }
+
+ a:hover {
+   background-color: #a581ff5b;
+   box-shadow: 0px 0px 400px 86px #a481ff;
+   -webkit-box-shadow: 0px 0px 400px 86px #a481ff;
+   -moz-box-shadow: 0px 0px 400px 86px #a481ff;
+   text-decoration: underline white;
+ }
+button {
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+
+}
+.button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+  display: inline-block;
+  border: none;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+
+}
